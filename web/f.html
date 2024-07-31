@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffefe;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #7d19e0;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .car {
+            background: #ffffff;
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideIn 0.5s ease-out;
+        }
+        .car:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .car img {
+            max-width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .car:hover img {
+            transform: scale(1.05);
+        }
+        .car h2 {
+            color: #333;
+            animation: slideUp 0.5s ease-out;
+        }
+        .car p {
+            color: #666;
+        }
+        .car-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .car-details div {
+            flex: 1;
+            margin: 0.5em;
+        }
+        .car-images {
+            display: flex;
+            gap: 1%;
+        }
+        .car-images img {
+            width: 24%;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Car Showcase</h1>
+    <p>Discover the latest models and their amazing features</p>
+</header>
+
+<div class="container">
+    <div class="car">
+        <div class="car-images">
+            <img src="svj.jpg" alt="Lamborghini Aventador SVJ">
+            <img src="svj2.avif" alt="Lamborghini Aventador SVJ">
+            <img src="svj3.jpg" alt="Lamborghini Aventador SVJ">
+            <img src="svj4.jpg" alt="Lamborghini Aventador SVJ">
+        </div>
+        <div class="car-details">
+            <div>
+                <h2>Lamborghini Aventador SVJ</h2>
+                <p>Manufacturer: Lamborghini</p>
+                <p>Year: 2018</p>
+                <p>Price: ₹ 7,41,25,600</p>
+            </div>
+            <div>
+                <p>The Lamborghini Aventador SVJ is a high-performance supercar with a naturally aspirated V12 engine.</p>
+                <p>It boasts 770 horsepower and can accelerate from 0 to 60 mph in just 2.8 seconds.</p>
+                <p>The SVJ stands for "Super Veloce Jota," indicating its track-focused and high-performance nature.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="car">
+        <div class="car-images">
+            <img src="porsche1.jpg" alt="Porsche 911 Carrera S">
+            <img src="porsche2.jpg" alt="Porsche 911 Carrera S">
+            <img src="porsche3.webp" alt="Porsche 911 Carrera S">
+            <img src="porsche5.jpg" alt="Porsche 911 Carrera S">
+        </div>
+        <div class="car-details">
+            <div>
+                <h2>Porsche 911 Carrera S</h2>
+                <p>Manufacturer: Porsche</p>
+                <p>Year: 2023</p>
+                <p>Price: ₹ 2,10,00,000</p>
+            </div>
+            <div>
+                <p>The Porsche 911 Carrera S is a high-performance sports car known for its iconic design and rear-engine layout.</p>
+                <p>It features a 3.0-liter twin-turbocharged flat-six engine producing around 443 horsepower and 0 to 60 mph in 3.5 seconds.</p>
+                <p>The 911 Carrera S offers a blend of classic styling with modern technology and luxury.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="car">
+        <div class="car-images">
+            <img src="bmw1.jpg" alt="BMW M8 Competition">
+            <img src="bmw2.jpg" alt="BMW M8 Competition">
+            <img src="bmw33.jpg" alt="BMW M8 Competition">
+            <img src="bmw4.jpg" alt="BMW M8 Competition">
+        </div>
+        <div class="car-details">
+            <div>
+                <h2>BMW M8 Competition</h2>
+                <p>Manufacturer: BMW</p>
+                <p>Year: 2023</p>
+                <p>Price: ₹ 2,44,00,000</p>
+            </div>
+            <div>
+                <p>The BMW M8 Competition is a high-performance luxury coupe with a powerful 4.4-liter twin-turbo V8 engine.</p>
+                <p>It delivers 617 horsepower and can sprint from 0 to 60 mph in around 3.0 seconds.</p>
+                <p>Its aggressive design includes distinctive M styling cues and a sporty interior with advanced technology.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="car">
+        <div class="car-images">
+            <img src="audi8.jpg" alt="Audi RS 7">
+            <img src="audi5.jpg" alt="Audi RS 7">
+            <img src="audi7.jpg" alt="Audi RS 7">
+            <img src="audi3.avif" alt="Audi RS 7">
+        </div>
+        <div class="car-details">
+            <div>
+                <h2>Audi RS 7</h2>
+                <p>Manufacturer: Audi</p>
+                <p>Year: 2014</p>
+                <p>Price: ₹ 2,24,00,000</p>
+            </div>
+            <div>
+                <p>The Audi RS 7 is a high-performance luxury sedan with a sleek, sporty design. It is powered by a 4.0-liter twin-turbo V8 engine,</p>
+                <p>delivering 591 horsepower and can sprint from 0 to 60 mph in around 3.5 seconds.</p>
+                <p>It features advanced all-wheel-drive and adaptive air suspension for exceptional handling and comfort.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
